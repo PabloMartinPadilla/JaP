@@ -25,9 +25,9 @@ return `
 document.addEventListener("DOMContentLoaded",async function(){
     const listado= document.querySelector(".product-list");
     const listaAutos= await getJSONData(URL);
-    const datos= listaAutos.data.products;
+/*    const datos= listaAutos.data.products;
     console.log(listaAutos);
-    console.log(datos);
+    console.log(datos); */
     listaAutos.data.products.forEach(producto =>{
         listado.innerHTML += getHTML(producto)
     })
